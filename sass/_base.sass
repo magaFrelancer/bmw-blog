@@ -1,12 +1,26 @@
+@mixin flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+
 *
     box-sizing: border-box
     margin: 0
     padding: 0
 
-body 
-    font-family: sans-serif
-    
+body
+    font-family: 'Ubuntu', sans-serif
+
+a
+    text-decoration: none
+
 .container
     max-width: 1040px
-    padding: 15px
     width: 100%
+
+    padding: 0 15px
+    margin: 0 auto
+
+@font-face
+    font-family: 'arial'
+    src: url('../fonts/9041.ttf')

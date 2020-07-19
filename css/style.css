@@ -1,4 +1,4 @@
-/* line 1, ../sass/_base.sass */
+/* line 6, ../sass/_base.sass */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,14 +6,159 @@
   padding: 0;
 }
 
-/* line 6, ../sass/_base.sass */
+/* line 11, ../sass/_base.sass */
 body {
-  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-/* line 9, ../sass/_base.sass */
+/* line 14, ../sass/_base.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 17, ../sass/_base.sass */
 .container {
   max-width: 1040px;
-  padding: 15px;
   width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "arial";
+  src: url("../fonts/9041.ttf");
+}
+/* line 1, ../sass/_header.sass */
+header {
+  margin-bottom: 27px;
+}
+
+/* line 3, ../sass/_header.sass */
+nav {
+  padding: 13px 0;
+}
+
+/* line 5, ../sass/_header.sass */
+.logo {
+  position: relative;
+  bottom: -4px;
+}
+
+/* line 8, ../sass/_header.sass */
+.nav__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 11, ../sass/_header.sass */
+.nav__right {
+  max-width: 790px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 16, ../sass/_header.sass */
+.header__menu {
+  max-width: 489px;
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 21, ../sass/_header.sass */
+.header__menu-items {
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-weight: light;
+  font-size: 18px;
+}
+/* line 27, ../sass/_header.sass */
+.header__menu-items:hover {
+  text-decoration: underline;
+}
+
+/* line 30, ../sass/_header.sass */
+.header__search {
+  max-width: 252px;
+  width: 100%;
+  position: relative;
+}
+/* line 36, ../sass/_header.sass */
+.header__search img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* line 42, ../sass/_header.sass */
+.header__search input {
+  width: 100%;
+  padding: 5px 0 5px 25px;
+  background: #F2F2F2;
+  border: 1px solid transparent;
+  outline: 0;
+  border-radius: 3px;
+}
+/* line 50, ../sass/_header.sass */
+.header__search input::-webkit-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #3e3e3e;
+}
+.header__search input:-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #3e3e3e;
+}
+.header__search input::-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #3e3e3e;
+}
+.header__search input::placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #3e3e3e;
+}
+/* line 54, ../sass/_header.sass */
+.header__search input:focus {
+  border-color: #3498db;
+  background: #F6F6F6;
+}
+/* line 57, ../sass/_header.sass */
+.header__search input:hover {
+  border-color: #3498db;
+  background: #F6F6F6;
+}
+
+/* line 62, ../sass/_header.sass */
+.header__img {
+  background: url("../imgs/header/wapka.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
 }
