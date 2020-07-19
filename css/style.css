@@ -9,14 +9,15 @@
 /* line 11, ../sass/_base.sass */
 body {
   font-family: "Ubuntu", sans-serif;
+  background: #E9E9E9;
 }
 
-/* line 14, ../sass/_base.sass */
+/* line 15, ../sass/_base.sass */
 a {
   text-decoration: none;
 }
 
-/* line 17, ../sass/_base.sass */
+/* line 18, ../sass/_base.sass */
 .container {
   max-width: 1040px;
   width: 100%;
@@ -36,15 +37,16 @@ header {
 /* line 3, ../sass/_header.sass */
 nav {
   padding: 13px 0;
+  background: #ffff;
 }
 
-/* line 5, ../sass/_header.sass */
+/* line 6, ../sass/_header.sass */
 .logo {
   position: relative;
   bottom: -4px;
 }
 
-/* line 8, ../sass/_header.sass */
+/* line 9, ../sass/_header.sass */
 .nav__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +59,7 @@ nav {
           align-items: center;
 }
 
-/* line 11, ../sass/_header.sass */
+/* line 12, ../sass/_header.sass */
 .nav__right {
   max-width: 790px;
   width: 100%;
@@ -72,7 +74,7 @@ nav {
           align-items: center;
 }
 
-/* line 16, ../sass/_header.sass */
+/* line 17, ../sass/_header.sass */
 .header__menu {
   max-width: 489px;
   width: 100%;
@@ -87,7 +89,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 21, ../sass/_header.sass */
+/* line 22, ../sass/_header.sass */
 .header__menu-items {
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
@@ -95,18 +97,18 @@ nav {
   font-weight: light;
   font-size: 18px;
 }
-/* line 27, ../sass/_header.sass */
+/* line 28, ../sass/_header.sass */
 .header__menu-items:hover {
   text-decoration: underline;
 }
 
-/* line 30, ../sass/_header.sass */
+/* line 31, ../sass/_header.sass */
 .header__search {
   max-width: 252px;
   width: 100%;
   position: relative;
 }
-/* line 36, ../sass/_header.sass */
+/* line 37, ../sass/_header.sass */
 .header__search img {
   position: absolute;
   left: 10px;
@@ -114,7 +116,7 @@ nav {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-/* line 42, ../sass/_header.sass */
+/* line 43, ../sass/_header.sass */
 .header__search input {
   width: 100%;
   padding: 5px 0 5px 25px;
@@ -123,7 +125,7 @@ nav {
   outline: 0;
   border-radius: 3px;
 }
-/* line 50, ../sass/_header.sass */
+/* line 51, ../sass/_header.sass */
 .header__search input::-webkit-input-placeholder {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -144,21 +146,220 @@ nav {
   font-weight: 300;
   color: #3e3e3e;
 }
-/* line 54, ../sass/_header.sass */
+/* line 55, ../sass/_header.sass */
 .header__search input:focus {
   border-color: #3498db;
   background: #F6F6F6;
 }
-/* line 57, ../sass/_header.sass */
+/* line 58, ../sass/_header.sass */
 .header__search input:hover {
   border-color: #3498db;
   background: #F6F6F6;
 }
 
-/* line 62, ../sass/_header.sass */
+/* line 63, ../sass/_header.sass */
 .header__img {
   background: url("../imgs/header/wapka.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 380px;
+}
+
+/* line 1, ../sass/_content.sass */
+.content {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* line 8, ../sass/_content.sass */
+.content__blocks a:hover .item-normal__img, .content__blocks a:hover .item-little__img {
+  opacity: 0.8;
+}
+
+/* line 10, ../sass/_content.sass */
+.content__block-left {
+  margin-right: 11px;
+}
+
+/* line 13, ../sass/_content.sass */
+.content__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 17, ../sass/_content.sass */
+.content__smoll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 21, ../sass/_content.sass */
+.content__inner {
+  max-width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 28, ../sass/_content.sass */
+.block__item-normal {
+  display: block;
+  max-width: 375px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* line 34, ../sass/_content.sass */
+.item-normal__img {
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* line 39, ../sass/_content.sass */
+.item-normal__info {
+  padding: 24px 15px 20px 37px;
+  background: #fff;
+}
+
+/* line 43, ../sass/_content.sass */
+.item__statya {
+  color: #b6b6b6;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+/* line 48, ../sass/_content.sass */
+.item__title {
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 56px;
+  color: #333;
+}
+
+/* line 54, ../sass/_content.sass */
+.item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 58, ../sass/_content.sass */
+.item__date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* line 62, ../sass/_content.sass */
+.black-date {
+  font-size: 12px;
+}
+
+/* line 64, ../sass/_content.sass */
+.item__views {
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+}
+/* line 68, ../sass/_content.sass */
+.item__views img {
+  margin-right: 5px;
+}
+
+/* line 72, ../sass/_content.sass */
+.block__item-little {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 11px;
+  max-width: 375px;
+  width: 100%;
+  height: 220px;
+}
+
+/* line 79, ../sass/_content.sass */
+.item-little__img {
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* line 84, ../sass/_content.sass */
+.item-little__info {
+  background: #fff;
+  padding: 29px 11px 13px 11px;
+}
+
+/* line 88, ../sass/_content.sass */
+.little--statya {
+  margin-bottom: 30px;
+}
+
+/* line 91, ../sass/_content.sass */
+.little--title {
+  margin-bottom: 47px;
+}
+
+/* line 95, ../sass/_content.sass */
+.little-black * {
+  color: #fff;
+  background: #00000c;
+}
+
+/* line 99, ../sass/_content.sass */
+.little-black .little--title {
+  margin-bottom: 29px;
+}
+/* line 101, ../sass/_content.sass */
+.little-black .little--statya {
+  color: #b6b6b6 !important;
+  margin-bottom: 15px !important;
+}
+
+/* line 105, ../sass/_content.sass */
+.little--title span {
+  font-weight: 400;
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 112, ../sass/_content.sass */
+.content__block-big {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* line 116, ../sass/_content.sass */
+.more-text {
+  margin-bottom: 17px;
+}
+
+/* line 118, ../sass/_content.sass */
+.content__nav-right {
+  max-width: 240px;
+  width: 100%;
+  height: 700px;
+  background: #fff;
+  margin-left: 10px;
 }
