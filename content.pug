@@ -1,105 +1,159 @@
-.content
-    .container 
+.content 
+    .container
         .content__inner
-            .content__blocks
-                .content__smoll
-                    .content__block-left 
-                        a.block__item-normal(href="#")
-                            img.item-normal__img(src="./imgs/content/1.jpg",alt="car")
-                            .item-normal__info
-                                    .item__statya СТАТЬЯ
-                                    .item__title Флагментский кроссовер BMW: первые фото
-                                    .item__info 
-                                        span.item__date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-                            
-                    .content__block-right 
-                        a.block__item-little(href="#")
-                            img.item-little__img(src="./imgs/content/2.jpg",alt="car")
-                            .item-little__info
-                                    .item__statya.little--statya СТАТЬЯ
-                                    .item__title.little--title BMW показала  свой первый  компактный  седан
-                                    .item__info.little--info 
-                                        span.item__date.little-date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-                        a.block__item-little.little-black(href="#")
-                            img.item-little__img(src="./imgs/content/3.jpg",alt="car")
-                            .item-little__info
-                                    .item__statya.little--statya ВСТРЕЧА
-                                    .item__title.little--title Сходка  «Воробьевы-  горы»<span>18 августа | 19:00</span>
-                                    .item__info.little--info 
-                                        span.item__date.black-date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view2.png", alt="")
-                                            |187
-                    
-                .content__block-big
-                     a.block-big(href="#")
-                        img.item-normal__img(src="./imgs/content/4.jpg",alt="car")
-                        .item-normal__info
-                                .item__statya СТАТЬЯ
-                                .item__title Официально анонсирован кабриолет i8
-                                .item__info 
-                                    span.item__date 8 августа 2018
-                                    .item__views
-                                        img(src="./imgs/content/view.png", alt="")
-                                        |187
-                .content__smoll
-                    .content__block-left 
-                        a.block__item-normal(style="margin-bottom:10px",href="#")
-                            img.item-normal__img(src="./imgs/content/1.jpg",alt="car")
-                            .item-normal__info
-                                    .item__statya СТАТЬЯ
-                                    .item__title Флагментский кроссовер BMW: первые фото
-                                    .item__info 
-                                        span.item__date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-                        a.block__item-little(href="#")
-                            img.item-little__img(src="./imgs/content/8.jpg",alt="car")
-                            .item-little__info
-                                    .item__statya.little--statya СТАТЬЯ
-                                    .item__title.little--title BMW превращает 6 версию в хэтчбек
-                                    .item__info.little--info 
-                                        span.item__date.little-date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-                            
-                    .content__block-right 
-                        a.block__item-little(href="#")
-                            img.item-little__img(src="./imgs/content/5.jpg",alt="car")
-                            .item-little__info
-                                    .item__statya.little--statya СТАТЬЯ
-                                    .item__title.little--title BMW превращает 6 версию в хэтчбек
-                                    .item__info.little--info 
-                                        span.item__date.little-date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-                        a.block__item-little(href="#")
-                            img.item-little__img(src="./imgs/content/6.jpg",alt="car")
-                            .item-little__info
-                                    .item__statya.little--statya СТАТЬЯ
-                                    .item__title.little--title.more-text BMW намерена внизить продажи  элетрокаров до небес
-                                    .item__info.little--info 
-                                        span.item__date.little-date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-                        a.block__item-little(href="#")
-                            img.item-little__img(src="./imgs/content/7.jpg",alt="car")
-                            .item-little__info
-                                    .item__statya.little--statya СТАТЬЯ
-                                    .item__title.little--title BMW собирается построить завод в России
-                                    .item__info.little--info 
-                                        span.item__date.little-date 8 августа 2018
-                                        .item__views
-                                            img(src="./imgs/content/view.png", alt="")
-                                            |187
-            .content__nav-right 
+            .contents
+                .contents__up
+                    .content__left
+                        .content__normal-block
+                            .normal-block__img
+                                img(src="./imgs/content/1.jpg")
+
+                            .normal-block__text 
+                                .normal-block__type
+                                    | СТАТЬЯ
+                                .normal-block__title
+                                    a(href="#")
+                                        | Флагментский кроссовер BMW: первые фото 
+                                .block__info
+                                    .info__date
+                                        | 8 августа 2018
+                                    .info__views
+                                        img(src="./imgs/content/view.png", alt="view")
+                                        | 147
+
+                    .content__right
+                        .content__little-block
+                                .little-block__img
+                                    img(src="./imgs/content/2.jpg")
+
+                                .little-block__text
+                                    .little-block__type
+                                        | СТАТЬЯ
+                                    .little-block__title
+                                        a(href="#")
+                                            | BMW показала  свой первый  компактный  седан 
+                                    .block__info
+                                        .info__date
+                                            | 8 августа 2018
+                                        .info__views
+                                            img(src="./imgs/content/view.png", alt="view")
+                                            | 147
+
+                        .content__little-black
+                                .little-block__img
+                                    img(src="./imgs/content/3.jpg" style="max-width:193px")
+
+                                .little-black__text
+                                    .little-black__type
+                                        | ВСТРЕЧА
+                                    .little-black__title
+                                        a(href="#")
+                                            | Сходка  «Воробьевы-  горы» <span>18 августа | 19:00</span>
+                                    .black__info
+                                        .info__date-black
+                                            | 8 августа 2018
+                                        .info__views-black
+                                            img(src="./imgs/content/view2.png", alt="view")
+                                            | 147
+                .contents__center
+                        .content__big-block
+                            .big-block__img
+                                img(src="./imgs/content/4.jpg", alt="")
+                            .big-black__text
+                                    .big-block__type
+                                        | СТАТЬЯ
+                                    .big-block__title
+                                        a(href="#")
+                                            | Официально анонсирован кабриолет i8
+                                    .block__info
+                                        .info__date
+                                            | 8 августа 2018
+                                        .info__views
+                                            img(src="./imgs/content/view.png", alt="view")
+                                            | 147
+                .contents__down
+                    .content__left
+                        .content__normal-block.last-normal-block
+                            .normal-block__img
+                                img(src="./imgs/content/1.jpg")
+
+                            .normal-block__text 
+                                .normal-block__type
+                                    | СТАТЬЯ
+                                .normal-block__title
+                                    a(href="#")
+                                        | Флагментский кроссовер BMW: первые фото 
+                                .block__info
+                                    .info__date
+                                        | 8 августа 2018
+                                    .info__views
+                                        img(src="./imgs/content/view.png", alt="view")
+                                        | 147
+                        .content__little-block
+                                .little-block__img
+                                    img(src="./imgs/content/8.jpg")
+
+                                .little-block__text
+                                    .little-block__type
+                                        | СТАТЬЯ
+                                    .little-block__title
+                                        a(href="#")
+                                            | BMW показала  свой первый  компактный  седан 
+                                    .block__info
+                                        .info__date
+                                            | 8 августа 2018
+                                        .info__views
+                                            img(src="./imgs/content/view.png", alt="view")
+                                            | 147
+
+                    .content__right
+                        .content__little-block
+                                .little-block__img
+                                    img(src="./imgs/content/5.jpg")
+
+                                .little-block__text
+                                    .little-block__type
+                                        | СТАТЬЯ
+                                    .little-block__title
+                                        a(href="#")
+                                            | BMW показала  свой первый  компактный  седан 
+                                    .block__info
+                                        .info__date
+                                            | 8 августа 2018
+                                        .info__views
+                                            img(src="./imgs/content/view.png", alt="view")
+                                            | 147
+                        .content__little-block
+                                .little-block__img
+                                    img(src="./imgs/content/6.jpg")
+
+                                .little-block__text
+                                    .little-block__type
+                                        | СТАТЬЯ
+                                    .little-block__title
+                                        a(href="#")
+                                            | BMW показала  свой первый  компактный  седан 
+                                    .block__info
+                                        .info__date
+                                            | 8 августа 2018
+                                        .info__views
+                                            img(src="./imgs/content/view.png", alt="view")
+                                            | 147
+                        .content__little-block
+                                .little-block__img
+                                    img(src="./imgs/content/7.jpg")
+
+                                .little-block__text
+                                    .little-block__type
+                                        | СТАТЬЯ
+                                    .little-block__title
+                                        a(href="#")
+                                            | BMW показала  свой первый  компактный  седан 
+                                    .block__info
+                                        .info__date
+                                            | 8 августа 2018
+                                        .info__views
+                                            img(src="./imgs/content/view.png", alt="view")
+                                            | 147
+
+            .content__nav

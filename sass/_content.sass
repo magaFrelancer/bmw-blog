@@ -1,123 +1,206 @@
-.content
-    font-family: sans-serif
-    color: #333
-.content__blocks
-    a 
-        
-        &:hover 
-            .item-normal__img,.item-little__img
-                opacity: .8
-.content__block-left 
-    margin-right: 11px
-
-.content__blocks
-    display: flex
-    flex-direction: column
-
-.content__smoll
-    display: flex
-    justify-content: space-between
-
+.last-normal-block
+    margin-bottom: 10px
 .content__inner
-    max-width: 100%
-    width: 100%
+    display: flex
 
-    display: flex 
-    justify-content: space-between
-
-.block__item-normal
-    display: block
-    max-width: 375px
-    width: 100%
+.contents
+    margin-right: 14px
+.contents__up 
+    display: flex
     margin-bottom: 10px
 
-.item-normal__img
+.content__left
+    max-width: 375px
     width: 100%
-    display: block
-    transition: all .2s linear
 
-.item-normal__info
-    padding: 24px 15px 20px 37px
+    margin-right: 10px
+
+.content__right
+    max-width: 375px
+    width: 100%
+
+.content__normal-block
+    width: 100%
+    max-height: 453px
+    transition: .2s linear
+    &:hover 
+        opacity: .9
+
+.normal-block__img
+    img 
+        width: 100%
+        display: block
+
+.normal-block__text
+    padding: 24px 18px 17px 36px
     background: #fff
 
-.item__statya
+.normal-block__type
+    font-size: 18px
     color: #b6b6b6
+    font-family: sans-serif
     font-weight: 400
-    margin-bottom: 32px
+    margin-bottom: 35px
 
-.item__title
-    font-weight: 500
-    font-size: 19px
-    margin-bottom: 56px
-    color: #333
+.normal-block__title
+    font-size: 22px
+    font-weight: 400
+    color: #000000
 
-.item__info
+    margin-bottom: 60px
+
+    a 
+        color: #000
+        &:hover 
+            text-decoration: underline
+
+.block__info
     display: flex
     justify-content: space-between
 
-.item__date
+.info__date, .info__views
     font-size: 14px
-    font-weight: 400
-    color: #333
-.black-date
-    font-size: 12px
-.item__views 
-    font-weight: 400
-    font-size: 14px
-    color: #333
+.info__views
     img 
         margin-right: 5px
-//little block
 
-.block__item-little 
+    
+    
+
+.content__little-block,.content__little-black
     display: flex
-    margin-bottom: 11px
-    max-width: 375px
-    width: 100%
-    height: 220px
+    transition: .2s linear
+    &:hover 
+        opacity: .9
 
-.item-little__img
-    display: block
-    width: 100%
-    transition: all .2s linear
+// right
 
-.item-little__info
+.content__little-block,.content__little-black
+    width: 100%
+
+.content__little-block
+    margin-bottom: 8px
+
+.little-block__text
     background: #fff
-    padding: 29px 11px 13px 11px
+    padding: 29px 10px 12px 12px
+    max-width: 187px
+    width: 100%
+    max-height: 220px
 
-.little--statya
-    margin-bottom: 30px
-
-.little--title
-    margin-bottom: 47px
-//little black
-.little-black
-    *
-        color: #fff 
-        background: #00000c
-.little-black
-    .little--title
-        margin-bottom: 29px
-    .little--statya
-        color: #b6b6b6 !important
-        margin-bottom: 15px !important
-.little--title
-    span 
-        font-weight: 400 
-        font-size: 13px
+.little-block__img
+    width: 100%
+    img 
         display: block
-        margin-top: 5px
+        width: 100%
+        height: 220px
 
-//block big
-.content__block-big
+
+
+.little-block__type
+    font-size: 18px
+    color: #b6b6b6
+    font-family: sans-serif
+    font-weight: 400
+    margin-bottom: 33px
+
+.little-block__title
+    font-size: 20px
+    font-weight: 300
+    font-family: sans-serif
+    color: #000000
+
+    margin-bottom: 20px
+
+    a 
+        color: #000000
+    &:hover 
+        text-decoration: underline
+//black block
+
+
+.little-black__text
+    background: #000
+    padding: 26px 10px 12px 12px
+    max-width: 187px
+    width: 100%
+    max-height: 220px
+
+.little-black__type
+    font-size: 15px
+    color: #b6b6b6
+    font-family: sans-serif
+    font-weight: 400
+    margin-bottom: 21px
+    
+.little-black__title
+    font-size: 19px
+    font-weight: 300
+    font-family: sans-serif
+    color: #fff
+
+    margin-bottom: 33px
+
+    a 
+        color: #ffff
+    &:hover
+        text-decoration: underline
+    span 
+        display: block
+        font-size: 13px
+        margin-top: 14px
+.black__info
+    display: flex
+    justify-content: space-between
+.info__date-black,.info__views-black
+    color: #fff
+    font-size: 14px
+.info__views-black
+    img 
+        margin-right: 5px
+//big content
+.contents__center 
+    margin-bottom: 12px
+.content__big-block
     max-width: 100%
     width: 100%
-    margin-bottom: 10px
-.more-text
-    margin-bottom: 17px
-.content__nav-right
-    max-width: 240px
-    width: 100%
-    height: 700px
+    transition: .2s linear
+    &:hover 
+        opacity: .9
+
+.big-block__img
+    img 
+        width: 100%
+        display: block
+
+.big-black__text
+    padding: 25px 11px 24px 34px
     background: #fff
-    margin-left: 10px
+
+.big-block__type
+    font-size: 18px
+    color: #b6b6b6
+    font-weight: 400
+    margin-bottom: 30px
+
+.big-block__title
+    font-size: 24px
+    font-weight: 400
+    color: #000000
+
+    margin-bottom: 60px
+
+    a 
+        color: #000
+        &:hover 
+            text-decoration: underline
+// content__down
+.contents__down
+    display: flex
+    margin-bottom: 10px
+//content__nav
+.content__nav
+    max-width: 250px
+    width: 100%
+    background: #ffffff
+    height: 600px
